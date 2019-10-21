@@ -962,6 +962,9 @@ a4 { font-weight:bold;
 	</div>
 </a>
 <!--설명글 -->
+	<audio id="beep">
+		<source src="beep.mp3" type="audio/mpeg">
+	</audio>
 
 
 <!-- Image 3 -->
@@ -1442,6 +1445,8 @@ moon.onclick = function(){
 			soun11.style.display = "none";
 		on = true;
 			}
+				soun11.onclick = function(){
+		beep.play();}	
 	tada10.onclick = function(){
 		tada10.style.display = "none";
 			tada4.style.display = "inline";
@@ -1571,7 +1576,7 @@ moon.onclick = function(){
 			soun9.style.display = "none";
 			soun10.style.display = "none";
 			soun11.style.display = "none";
-			self.setTimeout("lookDiv4()",2000);
+			self.setTimeout("lookDiv4()",700);
 			bx.style.display = "inline";
 			flashlight.style.display = "inline";
 			foo.style.display = "inline";
